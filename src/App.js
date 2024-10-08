@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Header';
+import myGif from './gif.webp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header /> {/**/ }
+      <main>
+        <h2>Questi qua siamo io e te!</h2>
+        <p>TI AMO TANTO BABY</p>
+        <img src={myGif} alt="Animazione GIF"/>
+      </main>
     </div>
   );
 }
